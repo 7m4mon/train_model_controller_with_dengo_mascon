@@ -4,6 +4,10 @@
 ### はじめに
 [『電車でGO!コントローラでTSマスコンをエミュレートしてBVEで遊ぶ。』](https://github.com/7m4mon/dengo_ts_emu) でArduinoから電車でGO！のコントローラを扱うことができましたので、次は、電車でGO！のコントローラを使って、鉄道模型を運転します。
 
+YouTube Video  
+[![](https://img.youtube.com/vi/ahtvqu5uVL8/0.jpg)](https://www.youtube.com/watch?v=ahtvqu5uVL8)
+
+
 ### ハードウェア
 * 電源は DC12V のACアダプタを使用します。Nゲージなら 2A程度の電流容量があれば十分です。
 * フィーダーはネジ式の端子台に接続します。モータードライバICにサーマルシャットダウン機能がありますが、念の為、ポリヒューズを付けています。
@@ -28,3 +32,9 @@
 * PWMのセット範囲は０～２５５ですが、表示範囲は０～１００なので、２５５→１００となるように、固定小数点演算をしています。具体的には、２５５＊２０１÷２＾９＝５１２５５÷５１２＝１００（小数点以下切り捨て）です。
 * リングLEDはスピードの段階を８色で表現しています。満了したら白にして、次のLEDを点灯して色を変えていきます。速度ゼロのときは赤となります。
 * リングLEDの最下はレバーサの状態を表し、停止（赤）／前進（緑）／後退（青）となっています。
+
+
+### 制作例
+<img src="https://github.com/7m4mon/train_model_controller_with_dengo_mascon/blob/main/dengo_model_1.jpg" alt="" title="">  
+<img src="https://github.com/7m4mon/train_model_controller_with_dengo_mascon/blob/main/dengo_model_2.jpg" alt="" title="">  
+<img src="https://github.com/7m4mon/train_model_controller_with_dengo_mascon/blob/main/dengo_model_3.jpg" alt="" title="">  
