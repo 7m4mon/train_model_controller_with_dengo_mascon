@@ -12,8 +12,8 @@
 //====================================================================
 //  ピンの定義
 //====================================================================
-#define PIN_PWM1 9
-#define PIN_PWM2 10
+#define PIN_PWM1 10
+#define PIN_PWM2 9
 #define PIN_MODE_ADJ_MIN_SPEED A5
 #define PIN_VOL_ADJ_MIN_SPEED  A6
 
